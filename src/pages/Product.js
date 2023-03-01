@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useFetch } from "../hooks/useFetch";
 
 const Product = () => {

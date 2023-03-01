@@ -1,13 +1,14 @@
-import "./Home.css"
+import './Home.css';
 
 import { Link } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch'
+
+import { useFetch } from '../hooks/useFetch';
 
 const Home = () => {
 
   const url = 'http://localhost:3000/products';
 
-  const { data: items, loading, error } = useFetch(url);
+  const { data: items, error } = useFetch(url);
 
   return (
     <div>

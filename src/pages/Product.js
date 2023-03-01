@@ -17,6 +17,7 @@ const Product = () => {
                 <div>
                     <h1>{product.name}</h1>
                     <p>R$ {product.price}</p>
+                    <Link to={`/products/${product.id}/info`}>Mais informações</Link>
                 </div>
             )}
         </>
